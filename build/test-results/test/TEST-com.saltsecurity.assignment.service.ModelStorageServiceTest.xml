@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.service.ModelStorageServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:17.359Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.014">
+  <properties/>
+  <testcase name="storeModels_validModels_shouldStoreSuccessfully()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.002"/>
+  <testcase name="clearStore_shouldRemoveAllModels()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.002"/>
+  <testcase name="findModel_nonExistingModel_shouldReturnEmpty()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="storeModels_duplicateKey_shouldOverwrite()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="findModel_caseInsensitiveMethod_shouldFindCorrectly()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="storeModels_nullModels_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="findModel_existingModel_shouldReturnModel()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="storeModels_invalidModels_shouldSkipInvalidOnes()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.005"/>
+  <system-out><![CDATA[2025-04-19T21:55:17.360+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.361+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test1
+2025-04-19T21:55:17.361+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key POST:/test2
+2025-04-19T21:55:17.362+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.362+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test1
+2025-04-19T21:55:17.362+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key POST:/test2
+2025-04-19T21:55:17.363+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.363+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : No models found for method: GET
+2025-04-19T21:55:17.363+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : No models found for method: POST
+2025-04-19T21:55:17.364+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.364+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : No models found for method: GET
+2025-04-19T21:55:17.365+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.365+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test
+2025-04-19T21:55:17.366+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test
+2025-04-19T21:55:17.366+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.367+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test
+2025-04-19T21:55:17.367+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.368+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.368+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test
+2025-04-19T21:55:17.369+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Model store cleared
+2025-04-19T21:55:17.369+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Stored model with key GET:/test1
+2025-04-19T21:55:17.369+03:00  WARN 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Invalid model: null
+2025-04-19T21:55:17.369+03:00  WARN 51545 --- [assignment] [    Test worker] c.s.a.service.ModelStorageService        : Invalid model: ApiModel(path=null, method=null, query_params=null, headers=null, body=null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

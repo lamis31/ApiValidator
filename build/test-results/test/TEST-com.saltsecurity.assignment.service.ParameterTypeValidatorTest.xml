@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:17.376Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.06">
+  <properties/>
+  <testcase name="isValidType_nullType_shouldSkipTypeAndContinue()" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="paramType_fromString_shouldReturnCorrectEnum()" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="paramType_fromString_shouldHandleNullAndUnknownTypes()" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[1] value=not-a-number, types=[int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.005"/>
+  <testcase name="[2] value=123.45, types=[int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[3] value=yes, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[4] value=1, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[5] value=not-a-list, types=[list]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[6] value={object}, types=[list]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[7] value=2023-01-01, types=[date]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[8] value=32-13-2023, types=[date]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[9] value=not-an-email, types=[email]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[10] value=missing-at-domain.com, types=[email]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[11] value=not-a-uuid, types=[uuid]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[12] value=123e4567-e89b-12d3-a456-42661417400, types=[uuid]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[13] value=BearerWithoutSpace123456, types=[auth-token]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[14] value=NotBearer 123456, types=[auth-token]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[15] value=any-value, types=[unknown-type]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="isValidType_nullOrEmptyTypes_shouldReturnTrue()" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[1] value=anyString, types=[string]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[2] value=123, types=[int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[3] value=0, types=[int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[4] value=-123, types=[int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[5] value=true, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[6] value=false, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[7] value=TRUE, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[8] value=FALSE, types=[boolean]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[9] value=[], types=[list]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[10] value=[1,2,3], types=[list]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[11] value=[&quot;a&quot;,&quot;b&quot;], types=[list]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[12] value=01-01-2023, types=[date]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[13] value=31-12-2023, types=[date]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[14] value=test@example.com, types=[email]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[15] value=user.name@domain.co.uk, types=[email]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[16] value=123e4567-e89b-12d3-a456-426614174000, types=[uuid]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[17] value=Bearer abcdef123456, types=[auth-token]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="[18] value=123, types=[string, int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <testcase name="[19] value=not-a-number, types=[string, int]" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.001"/>
+  <testcase name="paramType_fromString_shouldBeCaseInsensitive()" classname="com.saltsecurity.assignment.service.ParameterTypeValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

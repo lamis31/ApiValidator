@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ModelStorageServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ModelStorageServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.saltsecurity.assignment.service.html">com.saltsecurity.assignment.service</a> &gt; ModelStorageServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.012s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">clearStore_shouldRemoveAllModels()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findModel_caseInsensitiveMethod_shouldFindCorrectly()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findModel_existingModel_shouldReturnModel()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findModel_nonExistingModel_shouldReturnEmpty()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeModels_duplicateKey_shouldOverwrite()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeModels_invalidModels_shouldSkipInvalidOnes()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeModels_nullModels_shouldHandleGracefully()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">storeModels_validModels_shouldStoreSuccessfully()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:55:18.527 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.528 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.528 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key POST:/test2
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key POST:/test2
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: GET
+21:55:18.530 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: POST
+21:55:18.530 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: GET
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.532 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.532 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.533 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.534 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.534 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.535 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.535 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.535 [Test worker] WARN com.saltsecurity.assignment.service.ModelStorageService -- Invalid model: null
+21:55:18.535 [Test worker] WARN com.saltsecurity.assignment.service.ModelStorageService -- Invalid model: ApiModel(path=null, method=null, query_params=null, headers=null, body=null)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 19 Apr 2025, 21:55:18</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.service.ValidationServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:17.437Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.013">
+  <properties/>
+  <testcase name="validateRequest_nullPath_shouldReturnAbnormal()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.001"/>
+  <testcase name="validateRequest_withAnomalies_shouldReturnAbnormal()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.002"/>
+  <testcase name="validateRequest_noAnomalies_shouldReturnValid()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.003"/>
+  <testcase name="validateRequest_nullMethod_shouldReturnAbnormal()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.002"/>
+  <testcase name="validateRequest_withNullCollections_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.002"/>
+  <testcase name="validateRequest_modelNotFound_shouldReturnAbnormal()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.002"/>
+  <testcase name="validateRequest_nullRequestData_shouldReturnAbnormal()" classname="com.saltsecurity.assignment.service.ValidationServiceTest" time="0.001"/>
+  <system-out><![CDATA[2025-04-19T21:55:17.449+03:00  WARN 51545 --- [assignment] [    Test worker] c.s.a.service.ValidationService          : No API model found for GET:/test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
