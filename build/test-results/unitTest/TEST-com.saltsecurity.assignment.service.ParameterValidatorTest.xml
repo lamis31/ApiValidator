@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.service.ParameterValidatorTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:17.876Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.104">
+  <properties/>
+  <testcase name="validateParameterGroup_requiredParamMissing_shouldAddAnomaly()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.091"/>
+  <testcase name="validateParameterGroup_paramNameNull_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.0"/>
+  <testcase name="validateParameterGroup_unexpectedParameter_shouldAddAnomaly()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.004"/>
+  <testcase name="validateParameterGroup_typeMatch_shouldNotAddAnomaly()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <testcase name="validateParameterGroup_nullParamValues_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.0"/>
+  <testcase name="validateParameterGroup_nullDefinitions_shouldReturnEmptyList()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <testcase name="validateParameterGroup_typeMismatch_shouldAddAnomaly()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <testcase name="validateParameterGroup_nullValues_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.0"/>
+  <testcase name="validateParameterGroup_mixedExpectedAndUnexpected_shouldReportAllIssues()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <testcase name="validateParameterGroup_optionalParamMissing_shouldNotAddAnomaly()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <testcase name="validateParameterGroup_emptyDefinitions_shouldReturnEmptyList()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.0"/>
+  <testcase name="validateParameterGroup_duplicateParameters_shouldUseFirstValue()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.0"/>
+  <testcase name="validateParameterGroup_multipleAnomalies_shouldAddAllAnomalies()" classname="com.saltsecurity.assignment.service.ParameterValidatorTest" time="0.001"/>
+  <system-out><![CDATA[21:55:17.970 [Test worker] WARN com.saltsecurity.assignment.service.ParameterValidator -- Unexpected parameter detected: unexpected_param in query_params
+21:55:17.973 [Test worker] WARN com.saltsecurity.assignment.service.ParameterValidator -- Unexpected parameter detected: another_unexpected in query_params
+21:55:17.977 [Test worker] WARN com.saltsecurity.assignment.service.ParameterValidator -- Unexpected parameter detected: unexpected_param in body
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

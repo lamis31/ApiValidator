@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.service.ModelStorageServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:18.525Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.014">
+  <properties/>
+  <testcase name="storeModels_validModels_shouldStoreSuccessfully()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.003"/>
+  <testcase name="clearStore_shouldRemoveAllModels()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="findModel_nonExistingModel_shouldReturnEmpty()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.0"/>
+  <testcase name="storeModels_duplicateKey_shouldOverwrite()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.0"/>
+  <testcase name="findModel_caseInsensitiveMethod_shouldFindCorrectly()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="storeModels_nullModels_shouldHandleGracefully()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="findModel_existingModel_shouldReturnModel()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.001"/>
+  <testcase name="storeModels_invalidModels_shouldSkipInvalidOnes()" classname="com.saltsecurity.assignment.service.ModelStorageServiceTest" time="0.005"/>
+  <system-out><![CDATA[21:55:18.527 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.528 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.528 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key POST:/test2
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key POST:/test2
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.529 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: GET
+21:55:18.530 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: POST
+21:55:18.530 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- No models found for method: GET
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.531 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.532 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.532 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.533 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.534 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.534 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test
+21:55:18.535 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Model store cleared
+21:55:18.535 [Test worker] INFO com.saltsecurity.assignment.service.ModelStorageService -- Stored model with key GET:/test1
+21:55:18.535 [Test worker] WARN com.saltsecurity.assignment.service.ModelStorageService -- Invalid model: null
+21:55:18.535 [Test worker] WARN com.saltsecurity.assignment.service.ModelStorageService -- Invalid model: ApiModel(path=null, method=null, query_params=null, headers=null, body=null)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.saltsecurity.assignment.AssignmentApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-19T18:55:16.814Z" hostname="ylivshi-ltmvxtd.internal.salesforce.com" time="0.392">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.saltsecurity.assignment.AssignmentApplicationTests" time="0.392"/>
+  <system-out><![CDATA[21:55:16.037 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.saltsecurity.assignment.AssignmentApplicationTests]: AssignmentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:55:16.090 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.saltsecurity.assignment.AssignmentApplication for test class com.saltsecurity.assignment.AssignmentApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-04-19T21:55:16.281+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.AssignmentApplicationTests         : Starting AssignmentApplicationTests using Java 17.0.7 with PID 51545 (started by ylivshits in /Users/ylivshits/dev/assignment)
+2025-04-19T21:55:16.284+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.AssignmentApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-04-19T21:55:16.806+03:00  INFO 51545 --- [assignment] [    Test worker] c.s.a.AssignmentApplicationTests         : Started AssignmentApplicationTests in 0.653 seconds (process running for 1.278)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

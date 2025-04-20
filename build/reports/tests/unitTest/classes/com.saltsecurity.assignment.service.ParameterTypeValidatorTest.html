@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ParameterTypeValidatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ParameterTypeValidatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.saltsecurity.assignment.service.html">com.saltsecurity.assignment.service</a> &gt; ParameterTypeValidatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">39</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.018s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[10] value=missing-at-domain.com, types=[email]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[10]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[11] value=not-a-uuid, types=[uuid]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[11]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[12] value=123e4567-e89b-12d3-a456-42661417400, types=[uuid]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[12]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[13] value=BearerWithoutSpace123456, types=[auth-token]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[13]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[14] value=NotBearer 123456, types=[auth-token]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[14]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[15] value=any-value, types=[unknown-type]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[15]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] value=not-a-number, types=[int]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[1]</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] value=123.45, types=[int]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[2]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] value=yes, types=[boolean]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[3]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] value=1, types=[boolean]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[4]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] value=not-a-list, types=[list]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[5]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] value={object}, types=[list]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] value=2023-01-01, types=[date]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[7]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] value=32-13-2023, types=[date]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[8]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] value=not-an-email, types=[email]</td>
+<td class="success">isValidType_invalidValues_shouldReturnFalse(String, List)[9]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isValidType_nullOrEmptyTypes_shouldReturnTrue()</td>
+<td class="success">isValidType_nullOrEmptyTypes_shouldReturnTrue()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">isValidType_nullType_shouldSkipTypeAndContinue()</td>
+<td class="success">isValidType_nullType_shouldSkipTypeAndContinue()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[10] value=[1,2,3], types=[list]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[10]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[11] value=[&quot;a&quot;,&quot;b&quot;], types=[list]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[11]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[12] value=01-01-2023, types=[date]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[12]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[13] value=31-12-2023, types=[date]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[13]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[14] value=test@example.com, types=[email]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[14]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[15] value=user.name@domain.co.uk, types=[email]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[15]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[16] value=123e4567-e89b-12d3-a456-426614174000, types=[uuid]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[16]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[17] value=Bearer abcdef123456, types=[auth-token]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[17]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[18] value=123, types=[string, int]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[18]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[19] value=not-a-number, types=[string, int]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[19]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] value=anyString, types=[string]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[1]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] value=123, types=[int]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[2]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] value=0, types=[int]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[3]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] value=-123, types=[int]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[4]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] value=true, types=[boolean]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[5]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] value=false, types=[boolean]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] value=TRUE, types=[boolean]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[7]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] value=FALSE, types=[boolean]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[8]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] value=[], types=[list]</td>
+<td class="success">isValidType_validValues_shouldReturnTrue(String, List)[9]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">paramType_fromString_shouldBeCaseInsensitive()</td>
+<td class="success">paramType_fromString_shouldBeCaseInsensitive()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">paramType_fromString_shouldHandleNullAndUnknownTypes()</td>
+<td class="success">paramType_fromString_shouldHandleNullAndUnknownTypes()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">paramType_fromString_shouldReturnCorrectEnum()</td>
+<td class="success">paramType_fromString_shouldReturnCorrectEnum()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 19 Apr 2025, 21:55:18</p>
+</div>
+</div>
+</body>
+</html>
